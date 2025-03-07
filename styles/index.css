@@ -39,6 +39,10 @@
         height: auto;
 
     }
+
+    i {
+        color: white;
+    }
     
     .nav1 {
         width: 70%;
