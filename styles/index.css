@@ -46,6 +46,28 @@
         height: auto;
     }
 
+    #cart-icon {
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        color: #F3F4C5;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #1A7155;
+        border-radius: 10px;
+    }
+
+    #cart-icon:hover {
+        background: #0D422E;
+
+    }
+    
+    #cart-icon i{
+        margin-right: 5px;
+        margin-top: 4px;
+    }
+
     #logo {
         width: 100%;
         height: auto;
@@ -302,4 +324,91 @@
     }
     .contact-form button:hover {
         background: #0D422E;
+    }
+    /*------MODAL------*/
+    .cart-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: central;
+    }
+    
+    .cart-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    
+    #cart-items {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #cart-items li{
+        padding: 10px 0;
+        border-radius: 1px solid #dddddd;
+    }
+    
+    #checkout {
+        background-color: #f69858;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    #total {
+        margin-top: 15px;
+        font-weight: 900;
+        color: #333333;
+    }
+    
+    #close-cart {
+        cursor: pointer;
+        font-size: 45px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #ffffff;
+    }
+    
+    .purchase-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .purchase-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .purchase-content h2 {
+        margin-bottom: 15px;
+    }
+    
+    .cart-content button {
+        background-color: #f69858;
+        padding: 10px 20px;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
     }

@@ -1,2 +1,4 @@
-npm i -g http-server
-http-server -p 8000
+http-server
+prisma
+express
+cors

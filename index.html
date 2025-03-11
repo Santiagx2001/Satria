@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SATRIA</title>
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <a href="#"><img src="/img/Recurso 5.png" alt="Logo" id="logo"></a>
         <div class="nav1">
             <button>¿Quienes somos?</button>
-            <button onclick="window.location='carrito.html'">Productos</button>
-            <button>Nuestro propósito</button>
-            <button>Contactanos</button>
-            <a href="#"><img src="/icons/grocery-store.png" alt=""></a>
+            <button onclick="location.href='#section-container'">Productos</button>
+            <button onclick="location.href='#purpose-content'">Nuestro propósito</button>
+            <button onclick="location.href='#contact-container'">Contactanos</button>
+            <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i>(<span id="cart-count">0</span>)</a>
         </div>
     </header>
     <main>
@@ -22,10 +23,10 @@
             <img src="/img/modelo.png" alt="">
             <div id="quienesSomos">
                 <h3>¿Quienes somos?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium fugiat sequi blanditiis! Dicta in placeat aliquam perferendis eius, voluptatem iste libero voluptate totam laudantium! Quisquam recusandae magni officia. Repellendus, voluptatem?</p>
+                <p>En SATRIA, creemos en la moda con propósito. Cada prenda que compras incluye una semilla para plantar y obtener beneficios exclusivos, promoviendo el cuidado del medio ambiente. Además, reutilizamos los retazos de tela para crear accesorios, apoyando a una madre cabeza de familia. Con SATRIA, tu estilo deja huella.</p>
             </div>
         </article>
-        <section class="section-container">
+        <section class="section-container" id="section-container">
     <h2 class="section-title">Nuestros Productos</h2>
     <p class="section-subtitle">Explora nuestra colección exclusiva.</p>
     <div class="products-grid">
@@ -53,16 +54,31 @@
         <div class="product-card">
             <img src="/img/ropa3.jpg" alt="Producto 3">
             <div class="product-info">
-                <h3 class="product-title">Joggers Negros</h3>
-                <p class="product-description">Perfectos para un look casual y relajado.</p>
-                <p class="product-price">$59.99</p>
+                <h3 class="product-title">Sombrero Pesquero</h3>
+                <p class="product-description">Perfecto para un look casual y relajado.</p>
+                <p class="product-price">$45.000</p>
                 <button class="buy-button">Comprar</button>
             </div>
         </div>
     </div>
 </section>
-
-<section class="purpose-section">
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-cart">&times;</span>
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0</p>
+        <button id="checkout">Finalizar compra</button>
+    </div>
+</div>
+<div id="purchase-modal" class="purchase-modal">
+    <div class="purchase-content">
+        <h2>Compra finalizada</h2>
+        <p>Gracias por tu compra</p>
+        <button id="close-purchase">Cerra</button>
+    </div>
+</div>
+<section class="purpose-section" id="purpose-content">
     <h2>Nuestro Propósito</h2>
     <div class="purpose-content">
         <p>En SATRIA creemos en un mundo más verde y solidario. Cada compra que realizas no solo es una elección de estilo, sino también un aporte al medio ambiente y a la comunidad.</p>
@@ -71,26 +87,24 @@
     </div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section" id="contact-container">
     <div class="contact-container">
         <h2 class="contact-title">Contáctanos</h2>
-        <form class="contact-form">
+        <form class="contact-form" action="http://localhost:3000/api/enviarFormulario" method="post">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
             
             <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            <input type="email" id="email" name="correo" placeholder="Tu correo" required>
             
             <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <textarea id="message" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
             
             <button type="submit">Enviar</button>
         </form>
     </div>
 </section>
     </main>
-    <footer>
-
-    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
