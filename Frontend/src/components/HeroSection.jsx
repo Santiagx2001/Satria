@@ -1,18 +1,16 @@
 import React from 'react'
 
 export const HeroSection = () => (
-  <section className="relative h-screen bg-VerdeOscuro-Satria flex items-center justify-center text-center px-4 overflow-hidden">
-    <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('https://plus.unsplash.com/premium_photo-1713483864121-bb85ae97d2ac?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW9kZWxvJTIwZGUlMjByb3BhfGVufDB8fDB8fHww')" }}></div>
-    <div className="absolute top-2/4  z-10 text-AmarilloClaro-Satria p-6 rounded-lg bg-Negro-Satria/85 max-w-3xl">
-      <h1 className="text-4xl md:text-4xl font-bold mb-4 leading-tight">
-        MODA CON PROPÓSITO
+  <section className="relative h-screen bg-AmarilloClaro-Satria flex items-center justify-center text-center overflow-hidden">
+    <div className="absolute bg-[url(/src/assets/img/fondo.jpg)] bg-cover w-9/10 h-full bg-no-repeat rounded-4xl">
+    <div className='absolute text-left w-full h-full top-4/6 left-1/2'>
+      <h1 className="text-6xl md:text-6xl font-Newake text-amber-400 leading-tight w-3/7">
+        ULTIMA COLECCIÓN
       </h1>
-      <p className="text-xl md:text-xl mb-8 text-pretty">
-        Viste con estilo, siembra un futuro. Cada prenda Satria te conecta con el planeta.
+      <p className="text-xl md:text-xl mb-8 text-pretty font-Poppins-regular text-AmarilloClaro-Satria md:w-3/7 xl:w-2/3">
+        Una colección que no pide permiso,<span className='text-amber-400 font-bold'> solo se impone.</span>
       </p>
-      <button className="bg-VerdeOscuro-Satria hover:bg-AmarilloClaro-Satria text-white hover:text-VerdeOscuro-Satria font-semibold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out shadow-lg">
-        Descubre la Colección
-      </button>
+    </div>
     </div>
   </section>
 );

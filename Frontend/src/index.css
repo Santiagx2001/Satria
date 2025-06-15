@@ -13,19 +13,23 @@
     --color-AmarilloClaro-Satria: #F3F4C5;
     --color-VerdeOscuro-Satria: #0D422E;
     --color-Negro-Satria: #151615;
+    --font-Newake: 'Newake', sans-serif;
+    --font-Poppins-Regular: 'poppins-regular', sans-serif;
+    --font-Poppins-Light: 'poppins-light', sans-serif;
 }
 
-@layer {
-    .boton {
-        font-weight: 700;
-        background-color: var(--color-VerdeOscuro-Satria);
-        padding: 0.6rem 1.5rem;
-        border-radius: 15px;
-        transition: transform 0.5s, background-color 0.5s;
-    }
-    .boton:hover {
-        box-shadow: 0 0 10px 10px rgba(10, 56, 36, 0.3);
-        background-color: var(--color-Verde-Satria);
-        transform: scale(1.1);
-    }
+
+@font-face {
+    font-family: newake;
+    src: url('/src/assets/Fonts/newake/NewakeFont-Demo.otf');
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url('/src/assets/Fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url('/src/assets/Fonts/Poppins/Poppins-Light.ttf');
 }

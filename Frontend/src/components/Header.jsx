@@ -1,14 +1,15 @@
 import React from "react";
+import { Boton } from "./Boton";
 
 export const Header = () => {
     return (
-        <header className="flex justify-evenly items-center py-4 bg-VerdeOscuro-Satria text-AmarilloClaro-Satria">
-            <h1 className="text-4xl font-black">Satria</h1>
-            <ul className="flex gap-5">
-                <button class="boton"><li>Inicio</li></button>
-                <button class="boton"><li>Sobre Nosotros</li></button>
-                <button class="boton"><li>Productos</li></button>
-                <button class="boton"><li>Contactanos</li></button>
+        <header className="flex justify-evenly items-center py-7 bg-AmarilloClaro-Satria text-VerdeOscuro-Satria">
+            <h1 className="text-5xl font-Newake">SATRIA</h1>
+            <ul className="flex gap-6 font-Poppins-Regular font-semibold">
+                <Boton onClick={"location.href='#quienesSomos'"} label = {"Quienes Somos"} />
+                <Boton onClick={"location.href='#quienesSomos'"} label = {"Productos"} />
+                <Boton onClick={"location.href='#quienesSomos'"} label = {"Encuentranos"} />
+                <Boton onClick={"location.href='#quienesSomos'"} label = {"Contactanos"} />
             </ul>
         </header>
     );
