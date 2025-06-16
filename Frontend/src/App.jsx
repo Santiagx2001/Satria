@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import {Route, Routes} from 'react-router-dom'
 import { Banner } from './components/Banner'
 import { QuienesSomos } from './components/QuienesSomos'
 import { Header } from './components/Header'
-import {Route, Routes} from 'react-router-dom'
+import { Productos } from './components/Productos'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Banner />
       <QuienesSomos />
+      <Productos />
     </div>
   )
 }
