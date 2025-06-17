@@ -17,7 +17,7 @@ export const QuienesSomos = () => (
         </div>
         <div className="bg-[url('/src/assets/img/QuienesSomos2.jpg')] bg-cover rounded-xl shadow-md">
           <div className='bg-amber-300/70 p-10 rounded-xl min-w-full'>
-            <h3 className="text-2xl text-VerdeOscuro-Satria font-Newake  text-satria-dark-green">ESTILO AUTENTICO</h3>
+            <h3 className="text-2xl text-VerdeOscuro-Satria font-Newake  text-satria-dark-green">APORTE ECOLOGICO</h3>
             <p className="text-md text-VerdeOscuro-Satria font-Poppins-Regular font-bold ">Diseños modernos y atemporales que reflejan tu personalidad única.</p>
           </div>
         </div>

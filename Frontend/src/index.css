@@ -16,6 +16,7 @@
     --font-Newake: 'Newake', sans-serif;
     --font-Poppins-Regular: 'poppins-regular', sans-serif;
     --font-Poppins-Light: 'poppins-light', sans-serif;
+    --font-Poppins-Bold: 'poppins-bold', sans-serif;
 }
 
 
@@ -32,4 +33,9 @@
 @font-face {
     font-family: poppins-light;
     src: url('/src/assets/Fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('/src/assets/Fonts/Poppins/Poppins-Bold.ttf');
 }
