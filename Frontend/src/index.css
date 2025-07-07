@@ -21,6 +21,12 @@
     --font-Poppins-Bold: 'poppins-bold', sans-serif;
 }
 
+@layer utilities {
+    .Color-boton {
+        background-image: linear-gradient(from 30deg, var(--color-VerdeOscuro-Satria), var(--color-Verde-Satria)) ;
+    }
+}
+
 
 @font-face {
     font-family: newake;

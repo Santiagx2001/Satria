@@ -13,6 +13,5 @@ export const Banner = () => (
           Una colección que no pide permiso,<span className='text-amber-400 font-bold'> solo se impone.</span>
         </p>
       </div>
-    
   </section>
 );
