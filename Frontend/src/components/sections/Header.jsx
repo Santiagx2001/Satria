@@ -7,7 +7,7 @@ export const Header = () => {
     const nav = useNavigate()
     return (
         <header className="flex justify-evenly items-center w-screen pt-8 pb-3 text-VerdeOscuro-Satria">
-                    <div className="max-w-40" >
+                    <div className="md:w-35" >
                         <img src="/src/assets/img/Recurso2.png" alt="" />
                     </div>
 
@@ -19,8 +19,9 @@ export const Header = () => {
                         <Boton label = {"Políticas"} ruta={"#"}/>
                     </ul>
 
-                    <div>
+                    <div className="flex items-center justify-between  xl:w-28 p-1 rounded-full border-[1px] border-Negro-Satria/10">
                         <BotonCircular src={"/src/assets/icons/carrito-de-compras.png"}/>
+                        <BotonCircular src={"/src/assets/icons/usuario.png"}/>
                     </div>
         </header>
     );
